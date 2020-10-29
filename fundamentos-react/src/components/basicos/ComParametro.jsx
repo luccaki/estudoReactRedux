@@ -1,4 +1,4 @@
-export default function ComParametro(props){
+export default function ComParametro(props) {
     const status = props.nota >= 7 ? 'Aprovado' : 'Reprovado'
     return (
         <div>
