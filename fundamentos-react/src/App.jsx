@@ -6,11 +6,28 @@ import Aleatorio from './components/basicos/Aleatorio.jsx'
 import Card from './components/layout/Card.jsx'
 import Familia from'./components/basicos/Familia.jsx'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
+import ListaAluno from './components/repeticao/ListaAluno'
+import TabelaProdutos from './components/repeticao/TabelaProdutos'
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 
 export default props =>
     <div className="App">
         <h1>Fundamentos React teste</h1>
         <div className="Cards">
+            <Card titulo="#08 Renderização Condicional" color="#65c3ba">
+                <ParOuImpar numero={11}/>
+                <UsuarioInfo usuario={{nome: 'Fernando'}}/>
+                <UsuarioInfo usuario={{email: 'fernando@gmail.com'}}/>
+            </Card>
+            <Card titulo="#07 Desafio Repeticao" color="#6497b1">
+                <TabelaProdutos/>
+            </Card>
+
+            <Card titulo="#06 Repeticao" color="#0e9aa7">
+                <ListaAluno/>
+            </Card>
+
             <Card titulo="#05 Componente com Filhos" color="#a4b787">
                 <Familia sobrenome="Silva">
                     <FamiliaMembro nome="Pedro"/>
