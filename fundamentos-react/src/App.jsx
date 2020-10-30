@@ -10,16 +10,32 @@ import ListaAluno from './components/repeticao/ListaAluno'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
+import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import Input from './components/formulario/Input'
 
 export default props =>
     <div className="App">
         <h1>Fundamentos React teste</h1>
         <div className="Cards">
+            <Card titulo="#11 Componente Controlado" color="#851e3e">
+                <Input/>
+            </Card>
+
+            <Card titulo="#10 Comunicação Indireta" color="#a4b787">
+                <IndiretaPai/>
+            </Card>
+
+            <Card titulo="#09 Comunicação Direta" color="#0e9aa7">
+                <DiretaPai/>
+            </Card>
+
             <Card titulo="#08 Renderização Condicional" color="#65c3ba">
                 <ParOuImpar numero={11}/>
                 <UsuarioInfo usuario={{nome: 'Fernando'}}/>
                 <UsuarioInfo usuario={{email: 'fernando@gmail.com'}}/>
             </Card>
+
             <Card titulo="#07 Desafio Repeticao" color="#6497b1">
                 <TabelaProdutos/>
             </Card>
