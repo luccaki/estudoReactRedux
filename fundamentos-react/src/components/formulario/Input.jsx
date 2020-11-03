@@ -18,7 +18,6 @@ export default props => {
                 <input value={valor} onChange={quandoMudar}/>
                 <input value={undefined}/>
             </div>
-            
         </div>
     )
 }
