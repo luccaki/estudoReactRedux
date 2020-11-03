@@ -14,11 +14,16 @@ import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 
 export default props =>
     <div className="App">
         <h1>Fundamentos React teste</h1>
         <div className="Cards">
+            <Card titulo="#13 Mega" color="#6497b1">
+                <Mega qtde={8}/>
+            </Card>
+
             <Card titulo="#12 Contador" color="#0e9aa7">
                 <Contador numeroInicial={10}/>
             </Card>
