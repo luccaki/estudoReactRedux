@@ -10,7 +10,7 @@ const Media = props => {
             <div>
                 <span>
                     <span>Resultado:</span>
-                    <strong>{(min + max)/2}</strong>
+                    <strong>{(min + max) / 2}</strong>
                 </span>
             </div>
         </Card>
